@@ -23,13 +23,13 @@ export default function Layout({ children }) {
         <Container>
           <Navbar>
             <Navlinks>
-              <Link href="#" passHref>
+              <Link href="/about" passHref>
                 <Navlink>About</Navlink>
               </Link>
-              <Link href="#" passHref>
+              <Link href="/services" passHref>
                 <Navlink>Services</Navlink>
               </Link>
-              <Link href="#" passHref>
+              <Link href="/portfolio" passHref>
                 <Navlink>Portfolio</Navlink>
               </Link>
             </Navlinks>
@@ -37,7 +37,7 @@ export default function Layout({ children }) {
               <Logo fill="#11354C" />
             </Brand>
             <Action>
-              <Link href="#" passHref>
+              <Link href="/contact" passHref>
                 <Button>Contact Me</Button>
               </Link>
             </Action>
@@ -49,17 +49,17 @@ export default function Layout({ children }) {
       </Header>
       <MobileNav open={menuOpen}>
         <MobileNavWrapper open={menuOpen}>
-          <Link href="#" passHref>
+          <Link href="/about" passHref>
             <Navlink>About</Navlink>
           </Link>
-          <Link href="#" passHref>
+          <Link href="/services" passHref>
             <Navlink>Services</Navlink>
           </Link>
-          <Link href="#" passHref>
+          <Link href="/portfolio" passHref>
             <Navlink>Portfolio</Navlink>
           </Link>
           <Action mobile>
-            <Link href="#" passHref>
+            <Link href="/contact" passHref>
               <Button>Contact Me</Button>
             </Link>
           </Action>

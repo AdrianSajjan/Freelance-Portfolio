@@ -4,13 +4,13 @@ import Container from "styles/Container";
 import { IoClose } from "react-icons/io5";
 import { FaArrowRight } from "react-icons/fa";
 
-export default function About() {
+export default function Details() {
   return (
     <Section>
       <Container>
-        <Card color={theme.colors.brown.light}>
+        <Card color={theme.colors.gray.light}>
           <div className="cover">
-            <img src="/images/tech-2.png" alt="" className="image" />
+            <img src="/profile/me-2.jpg" alt="" className="image" />
           </div>
           <div className="body">
             <div className="inner">
@@ -36,7 +36,7 @@ export default function About() {
             </div>
           </div>
         </Card>
-        <Card color={theme.colors.gray.light} reverse>
+        <Card color={theme.colors.brown.light} reverse>
           <div className="cover">
             <img src="/images/fix-1.png" alt="" className="image" />
           </div>
@@ -58,7 +58,7 @@ export default function About() {
         </Card>
         <Card color={theme.colors.orange.light}>
           <div className="cover">
-            <img src="/profile/me-2.jpg" alt="" className="image" />
+            <img src="/profile/me-1.jpg" alt="" className="image" />
           </div>
           <div className="body">
             <div className="inner">

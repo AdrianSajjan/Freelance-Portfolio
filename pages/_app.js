@@ -1,7 +1,9 @@
 import Head from "next/head";
-import { Fragment } from "react";
 import fonts from "constants/fonts";
 import theme from "constants/theme";
+import { useRouter } from "next/router";
+import Loader from "components/App/Loader";
+import { Fragment, useEffect, useState } from "react";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
@@ -19,6 +21,25 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const handleStart = () => setLoading(true);
+    const handleComplete = () => setLoading(false);
+
+    router.events.on("routeChangeStart", handleStart);
+    router.events.on("routeChangeError", handleComplete);
+    router.events.on("routeChangeComplete", handleComplete);
+
+    return () => {
+      router.events.off("routeChangeStart", handleStart);
+      router.events.off("routeChangeError", handleComplete);
+      router.events.off("routeChangeComplete", handleComplete);
+    };
+  });
+
   return (
     <Fragment>
       <Head>
@@ -30,6 +51,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
+        <Loader show={loading} />
         <Component {...pageProps} />
       </ThemeProvider>
     </Fragment>
