@@ -235,6 +235,10 @@ const Card = styled.div`
       margin-top: 12px;
       line-height: 25px;
     }
+
+    & > svg {
+      flex-shrink: 0;
+    }
   }
 
   .action {
