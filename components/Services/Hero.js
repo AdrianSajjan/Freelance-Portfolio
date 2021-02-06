@@ -1,4 +1,3 @@
-import Link from "next/link";
 import styled from "styled-components";
 import Container from "styles/Container";
 
@@ -12,16 +11,15 @@ export default function Hero() {
           </Column>
           <Column className="overlay">
             <div className="card">
-              <h1 className="title">Attract more clients by expanding your business digitally.</h1>
+              <h1 className="title">Give your business the extra thrust that it needs.</h1>
+              <p className="subtitle">With me you won't have to look anywhere else.</p>
+              <p className="subtitle">I'll handle your website or app's design, development and hosting.</p>
               <p className="subtitle">
-                Websites, Online stores or Mobile apps are now necessary to compete in a rapidly growing paperless world.
+                As a developer, I'll make sure that you won't have to deal with the hard parts anytime soon.
               </p>
-              <p className="subtitle">
-                I help business expand their reach by creating a digital identity that can be accessed from anywhere.
-              </p>
-              <Link href="/services">
-                <a className="action">How I can help</a>
-              </Link>
+              <a href="/contact" className="action">
+                See my works
+              </a>
             </div>
           </Column>
           <Column className="cover">

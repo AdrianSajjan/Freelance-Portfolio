@@ -1,3 +1,4 @@
+import Link from "next/link";
 import theme from "constants/theme";
 import styled from "styled-components";
 import Container from "styles/Container";
@@ -49,10 +50,12 @@ export default function About() {
                 E-Commerce Development.
               </p>
               <p className="description">Find out how we can work together.</p>
-              <a href="/services" className="action">
-                <span>See Packages</span>
-                <FaArrowRight />
-              </a>
+              <Link href="/services" passHref>
+                <a className="action">
+                  <span>See Packages</span>
+                  <FaArrowRight />
+                </a>
+              </Link>
             </div>
           </div>
         </Card>
@@ -71,10 +74,12 @@ export default function About() {
               <p className="description">
                 I am a sucker for minimalism and I like creating minimalistic and powerful designs for web and mobile platform.
               </p>
-              <a href="/about" className="action">
-                <span>Learn More About Me</span>
-                <FaArrowRight />
-              </a>
+              <Link href="/about" passHref>
+                <a className="action">
+                  <span>Learn More About Me</span>
+                  <FaArrowRight />
+                </a>
+              </Link>
             </div>
           </div>
         </Card>
