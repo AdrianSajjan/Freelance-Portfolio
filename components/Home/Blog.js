@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styled from "styled-components";
 import Container from "styles/Container";
 import { FaArrowRight } from "react-icons/fa";
@@ -6,6 +7,7 @@ const posts = [
   {
     id: "1",
     title: "React JS vs Vue JS. Which one to choose?",
+    slug: "react-js-vs-vue-js-which-one-to-choose",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo maiores officia ex sed adipisci vitae aliquam saepe necessitatibus facilis autem esse nulla harum rerum mollitia, magni tempora assumenda voluptas? Laboriosam.",
     image:
@@ -14,6 +16,7 @@ const posts = [
   {
     id: "2",
     title: "Top 20 web development trends of 2021.",
+    slug: "top-20-web-development-trends-of-2021.",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo maiores officia ex sed adipisci vitae aliquam saepe necessitatibus facilis autem esse nulla harum rerum mollitia, magni tempora assumenda voluptas? Laboriosam.",
     image:
@@ -22,6 +25,7 @@ const posts = [
   {
     id: "3",
     title: "10 mistakes to avoid while designing UI and UX.",
+    slug: "10-mistakes-to-avoid-while-designing-ui-and-ux.",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo maiores officia ex sed adipisci vitae aliquam saepe necessitatibus facilis autem esse nulla harum rerum mollitia, magni tempora assumenda voluptas? Laboriosam.",
     image:
@@ -34,7 +38,7 @@ export default function Blog() {
     <Section>
       <Container>
         <Posts>
-          {posts.map(({ id, description, image, title }) => (
+          {posts.map(({ id, description, image, title, slug }) => (
             <Post key={id}>
               <div className="cover">
                 <img src={image} alt="cover" className="image" />
@@ -42,10 +46,12 @@ export default function Blog() {
               <div className="body">
                 <h2 className="title">{title}</h2>
                 <p className="description">{description}</p>
-                <a href="#" className="action">
-                  <span>Read More</span>
-                  <FaArrowRight />
-                </a>
+                <Link href={`/blogs/${slug}`}>
+                  <a className="action">
+                    <span>Read More</span>
+                    <FaArrowRight />
+                  </a>
+                </Link>
               </div>
             </Post>
           ))}
