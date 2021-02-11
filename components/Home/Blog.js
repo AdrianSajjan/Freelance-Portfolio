@@ -10,8 +10,7 @@ const posts = [
     slug: "react-js-vs-vue-js-which-one-to-choose",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo maiores officia ex sed adipisci vitae aliquam saepe necessitatibus facilis autem esse nulla harum rerum mollitia, magni tempora assumenda voluptas? Laboriosam.",
-    image:
-      "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+    image: "/blog/react-vs-vue.jfif",
   },
   {
     id: "2",
@@ -19,8 +18,7 @@ const posts = [
     slug: "top-20-web-development-trends-of-2021.",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo maiores officia ex sed adipisci vitae aliquam saepe necessitatibus facilis autem esse nulla harum rerum mollitia, magni tempora assumenda voluptas? Laboriosam.",
-    image:
-      "https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fHdlYnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    image: "/blog/2021-web-dev-trends.png",
   },
   {
     id: "3",
@@ -28,8 +26,7 @@ const posts = [
     slug: "10-mistakes-to-avoid-while-designing-ui-and-ux.",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo maiores officia ex sed adipisci vitae aliquam saepe necessitatibus facilis autem esse nulla harum rerum mollitia, magni tempora assumenda voluptas? Laboriosam.",
-    image:
-      "https://images.unsplash.com/photo-1476357471311-43c0db9fb2b4?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTl8fHdlYnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    image: "/blog/10-mistakes-to-avoid.jfif",
   },
 ];
 

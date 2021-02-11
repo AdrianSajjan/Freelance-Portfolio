@@ -164,6 +164,8 @@ const Card = styled.div`
   .image {
     width: 100%;
     height: 100%;
+    max-width: 400px;
+    max-height: 400px;
     object-fit: cover;
 
     ${(props) => props.theme.breakpoints.sm} {

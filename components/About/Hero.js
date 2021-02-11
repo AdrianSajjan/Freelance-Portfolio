@@ -7,7 +7,7 @@ export default function Hero() {
       <Container>
         <Row>
           <Column className="hide-sm">
-            <img src="/images/coffee-1.png" alt="cover" className="small" />
+            <img src="/profile/me-4.jpg" alt="cover" className="small" />
           </Column>
           <Column className="overlay">
             <div className="card">
@@ -21,7 +21,7 @@ export default function Hero() {
             </div>
           </Column>
           <Column className="cover">
-            <img src="/images/tech-1.png" alt="cover" className="large" />
+            <img src="/images/tech-3.jpg" alt="cover" className="large" />
           </Column>
         </Row>
       </Container>
@@ -73,7 +73,7 @@ const Column = styled.div`
 
   .card {
     display: flex;
-    max-width: 70%;
+    max-width: 75%;
     flex-direction: column;
     padding: 40px 60px 50px;
     background-color: white;
@@ -139,12 +139,16 @@ const Column = styled.div`
   .small {
     width: 100%;
     height: 100%;
+    max-width: 400px;
+    max-height: 400px;
     object-fit: cover;
   }
 
   .large {
-    height: 100%;
     width: 100%;
+    height: 100%;
+    max-width: 550px;
+    max-height: 650px;
     object-fit: cover;
   }
 `;
