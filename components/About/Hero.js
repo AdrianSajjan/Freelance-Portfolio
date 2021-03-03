@@ -7,7 +7,7 @@ export default function Hero() {
       <Container>
         <Row>
           <Column className="hide-sm">
-            <img src="/profile/me-4.jpg" alt="cover" className="small" />
+            <img src="/images/tech-3.jpg" alt="cover" className="small" />
           </Column>
           <Column className="overlay">
             <div className="card">
@@ -21,7 +21,7 @@ export default function Hero() {
             </div>
           </Column>
           <Column className="cover">
-            <img src="/images/tech-3.jpg" alt="cover" className="large" />
+            <img src="/profile/me-2.jpg" alt="cover" className="large" />
           </Column>
         </Row>
       </Container>
@@ -147,7 +147,7 @@ const Column = styled.div`
   .large {
     width: 100%;
     height: 100%;
-    max-width: 550px;
+    max-width: 500px;
     max-height: 650px;
     object-fit: cover;
   }

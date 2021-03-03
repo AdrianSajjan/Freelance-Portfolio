@@ -11,7 +11,7 @@ export default function Details() {
       <Container>
         <Card color={theme.colors.gray.light}>
           <div className="cover">
-            <img src="/profile/me-2.jpg" alt="Adrian" className="image" />
+            <img src="/profile/me-5.jpg" alt="Adrian" className="image" />
           </div>
           <div className="body">
             <div className="inner">
