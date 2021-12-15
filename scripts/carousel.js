@@ -11,7 +11,7 @@ let portfolioTranslateX = 0;
 let portfolioLastMouseX = 0;
 let portfolioMouseDown = false;
 
-function handleLeftClick() {
+function handleNextSlide() {
   if (!(portfolioTranslateX <= 0)) {
     portfolioTranslateX -= PORTFOLIO_SPACING + PORTFOLIO_WIDTH;
   } else {
@@ -20,7 +20,7 @@ function handleLeftClick() {
   portfolio.setAttribute("style", `transform: translateX(-${portfolioTranslateX}px)`);
 }
 
-function handleRightClick() {
+function handlePrevSlide() {
   if (!(portfolioTranslateX >= PORTFOLIO_MAX_WIDTH)) {
     portfolioTranslateX += PORTFOLIO_SPACING + PORTFOLIO_WIDTH;
   } else {
@@ -29,32 +29,35 @@ function handleRightClick() {
   portfolio.setAttribute("style", `transform: translateX(-${portfolioTranslateX}px)`);
 }
 
-portfolioLeftArrow.addEventListener("click", handleLeftClick);
-
-portfolioRightArrow.addEventListener("click", handleRightClick);
-
-portfolio.addEventListener("mousedown", (event) => {
+function handleDragStart(event) {
+  event.preventDefault();
   portfolioMouseDown = true;
   portfolioLastMouseX = event.pageX;
-});
+}
 
-portfolio.addEventListener("mouseup", () => {
+function handleDragEnd(event) {
+  event.preventDefault();
   portfolioMouseDown = false;
   portfolioLastMouseX = 0;
-});
+}
 
-portfolio.addEventListener("mouseleave", () => {
-  portfolioMouseDown = false;
-  portfolioLastMouseX = 0;
-});
+function handleDrag(event) {
+  if (!portfolioMouseDown) return;
+  const translate = portfolioLastMouseX - event.pageX;
 
-// portfolio.addEventListener("mousemove", (event) => {
-//   if (portfolioMouseDown) {
-//     const translate = event.pageX - portfolioLastMouseX;
-//     portfolioTranslateX = -translate;
-//     portfolio.setAttribute("style", `transform: translateX(-${portfolioTranslateX}px)`);
-//   }
-// });
+  if (translate < 0) portfolioTranslateX += 50;
+  else portfolioTranslateX -= 50;
+  portfolioTranslateX = Math.min(Math.max(portfolioTranslateX, 0), -PORTFOLIO_MAX_WIDTH);
+  portfolio.setAttribute("style", `transform: translateX(${portfolioTranslateX}px)`);
+}
+
+portfolioLeftArrow.addEventListener("click", handleNextSlide);
+portfolioRightArrow.addEventListener("click", handlePrevSlide);
+
+// portfolio.addEventListener("mousedown", handleDragStart);
+// portfolio.addEventListener("mouseup", handleDragEnd);
+// portfolio.addEventListener("mouseleave", handleDragEnd);
+// portfolio.addEventListener("mousemove", handleDrag);
 
 Array.from(portfolioItems).forEach((item, index) => {
   item.setAttribute("style", `left: ${PORTFOLIO_WIDTH * index + PORTFOLIO_SPACING * index}px`);

@@ -51,8 +51,7 @@ body {
   border-radius: 100px;
   position: fixed;
   background-color: #ffffff77;
-  transition: top 50ms ease-out, left 50ms ease-out, height 400ms ease, width 400ms ease, background-color 400ms ease,
-    transform 400ms ease;
+  transition: top 50ms ease-out, left 50ms ease-out, height 400ms ease, width 400ms ease, background-color 400ms ease, transform 400ms ease;
 }
 
 .point.hover,
@@ -586,6 +585,81 @@ body {
 }
 
 /* End of Portfolio */
+
+/* Services */
+
+.services {
+  margin: 150px 0 40px;
+}
+
+.services__cards {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.services__card {
+  background-color: #181715;
+  position: relative;
+  display: flex;
+  margin-bottom: 20px;
+  border: 1px solid #151412;
+}
+
+.services__card::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 50px;
+  left: -1px;
+  top: 50%;
+  margin-top: -25px;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: all 0.5s 1s ease;
+}
+
+.services__card-left {
+  flex: 0.75;
+  padding: 42px 42px 44px;
+}
+
+.services__card-title {
+  font-size: 30px;
+  font-weight: 400;
+  color: #dddddd;
+  margin-bottom: 18px;
+}
+
+.services__card-description {
+  font-size: 18px;
+  font-weight: 400;
+  color: #888888;
+  max-width: 500px;
+}
+
+.services__card-right {
+  flex: 0.25;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 1px solid #ffffff11;
+}
+
+.services__card-price {
+  font-size: 16px;
+  color: #888888;
+}
+
+.services__card-amount {
+  font-size: 24px;
+  font-weight: 500;
+  color: #987750;
+}
+
+/* End of Services */
 
 /* Side Bar */
 

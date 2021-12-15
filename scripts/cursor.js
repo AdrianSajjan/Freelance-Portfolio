@@ -2,11 +2,7 @@ const cursor = document.getElementById("cursor");
 const point = document.getElementById("point");
 const carousels = Array.from(document.getElementsByClassName("carousel-track"));
 
-const links = [
-  ...document.querySelectorAll("a"),
-  ...document.querySelectorAll("button"),
-  ...document.querySelectorAll('[role="button"]'),
-];
+const links = [...document.querySelectorAll("a"), ...document.querySelectorAll("button"), ...document.querySelectorAll('[role="button"]')];
 
 carousels.forEach((element) => {
   element.addEventListener("mouseenter", () => {
