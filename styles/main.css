@@ -145,6 +145,88 @@ body {
 
 /* Utilities */
 
+.field {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.field-row {
+  display: flex;
+  gap: 20px;
+}
+
+.field-row .field {
+  flex: 1;
+}
+
+.input {
+  min-height: 70px;
+  outline: none;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+  padding: 0 20px !important;
+  border: 1px solid #ffffff33;
+  background-color: transparent;
+  width: 100%;
+  max-width: 100%;
+  transition: 0.2s ease;
+}
+
+textarea.input {
+  padding: 16px 20px !important;
+}
+
+.field.active .input {
+  border: 1px solid #987750;
+}
+
+.label {
+  left: 0;
+  pointer-events: none;
+  top: 0;
+  display: block;
+  font-size: 22px;
+  color: #888888;
+  font-weight: 400;
+  margin-top: 10px;
+  line-height: 50px;
+  position: absolute;
+  padding-left: 20px;
+  transition: 0.2s ease;
+}
+
+.field.active .label {
+  color: #987750;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #1d1b19;
+  transform: scale(0.75) translateY(-95%);
+}
+
+.submit {
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Jost", sans-serif;
+  transition: 0.2s ease;
+  line-height: 26px;
+  color: #ffffff;
+  padding: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 2px solid #ffffff33;
+  background-color: transparent;
+}
+
+.submit:hover {
+  color: #987750;
+  border: 2px solid #987750;
+}
+
 .container {
   width: 100%;
   padding: 0 12%;
@@ -664,6 +746,22 @@ body {
 }
 
 /* End of Services */
+
+/* Customers */
+
+.customers {
+  margin: 150px 0 40px;
+}
+
+/* End of Customers */
+
+/* Contact */
+
+.contact {
+  margin: 150px 0 40px;
+}
+
+/* End of Contact */
 
 /* Side Bar */
 
