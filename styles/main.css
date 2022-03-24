@@ -335,8 +335,13 @@ textarea.input {
   font-size: 18px;
   font-weight: 400;
   color: #dddddd;
-  text-decoration: none;
   position: relative;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.about__details-link a:hover {
+  color: #987750;
 }
 
 .about__details-link a::before {
@@ -364,10 +369,11 @@ textarea.input {
   justify-content: center;
   border: 2px solid #888;
   text-decoration-line: none;
-  transition: 0.2s ease-out;
+  transition: 0.3s ease-out;
 }
 
 .about__details-download:hover {
+  color: #987750;
   border: 2px solid #987750;
 }
 
@@ -378,6 +384,7 @@ textarea.input {
 .about__details-download__box {
   width: 60px;
   height: 60px;
+  transition: 0.3s ease;
 }
 
 .about__details-download__arrow {
@@ -388,8 +395,13 @@ textarea.input {
   transition: 0.3s ease;
 }
 
+.about__details-download:hover .about__details-download__box {
+  fill: #987750;
+}
+
 .about__details-download:hover .about__details-download__arrow {
   transform: translateY(-20px);
+  fill: #987750;
 }
 
 .about__tabs {
@@ -758,10 +770,48 @@ textarea.input {
 /* Contact */
 
 .contact {
-  margin: 150px 0 40px;
+  margin: 150px 0 200px;
+}
+
+.contact__info {
+  margin: 95px 0 0;
+}
+
+.contact__info-label {
+  margin: 0;
+  padding: 0;
+  color: #888888;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.contact__info-value {
+  margin: 0;
+  font-size: 30px;
+  padding: 0;
+  color: #dddddd;
+  margin-bottom: 58px;
+  font-weight: 400;
+  max-width: 400px;
+}
+
+.contact__info-link {
+  color: #dddddd;
+  margin-bottom: 0;
+  font-size: 18px;
+  padding-bottom: 2px;
+  text-decoration: none;
+  border-bottom: 1px solid #ffffff33;
 }
 
 /* End of Contact */
+
+/* Footer */
+.footer__content {
+  padding: 60px 0;
+}
+/* End of Footer */
 
 /* Side Bar */
 
@@ -854,7 +904,8 @@ textarea.input {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  aspect-ratio: 1;
+  aspect-ratio: 1.2;
+  object-position: 50% 40%;
 }
 
 .sidebar__title-holder {
@@ -933,11 +984,11 @@ textarea.input {
 }
 
 .sidebar__contact:hover {
-  color: #dddddd;
+  color: #987750;
 }
 
 .sidebar__contact:hover::before {
-  background-color: #dddddd;
+  background-color: #987750;
 }
 
 /* End of Sidebar */
