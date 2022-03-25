@@ -4,7 +4,7 @@ const portfolioLeftArrow = document.getElementById("portfolio-carousel-left-cont
 const portfolioRightArrow = document.getElementById("portfolio-carousel-right-control");
 
 const PORTFOLIO_WIDTH = 370;
-const PORTFOLIO_SPACING = 30;
+const PORTFOLIO_SPACING = 60;
 const PORTFOLIO_MAX_WIDTH = (portfolioItems.length - 1) * PORTFOLIO_WIDTH + PORTFOLIO_SPACING * (portfolioItems.length - 1);
 
 let portfolioTranslateX = 0;

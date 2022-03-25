@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/main.css" />
+    <script src="https://kit.fontawesome.com/440c74e794.js" crossorigin="anonymous"></script>
     <title>Adrian Sajjan</title>
   </head>
   <body>
@@ -13,14 +14,37 @@
       <span id="point-left" class="point-left"></span>
       <span id="point-right" class="point-right"></span>
     </div>
+    <section class="sidebar">
+      <a class="sidebar__menu">
+        <span class="sidebar__menu-text">Menu</span>
+        <span class="sidebar__menu-lines"></span>
+      </a>
+      <div class="sidebar__image-wrapper">
+        <div class="sidebar__image-border__tall"></div>
+        <div class="sidebar__image-border__wide"></div>
+        <img src="images/profile-1.webp" alt="Adrian Sajjan" class="sidebar__image" />
+        <div class="sidebar__title-holder">
+          <h5 class="sidebar__title">Hi There! I Am</h5>
+          <h3 class="sidebar__animated-title">
+            <span id="typewriter" class="typewriter"></span>
+          </h3>
+        </div>
+      </div>
+      <div class="sidebar__contact-holder">
+        <span class="sidebar__contact-circle"></span>
+        <a href="#contact" class="sidebar__contact">
+          <span class="sidebar__contact-content">I'm available for a freelance job. Hire me</span>
+        </a>
+      </div>
+    </section>
     <main class="root">
       <section class="content">
         <div class="container">
           <p class="section__heading">Introduction</p>
           <h1 class="section__title">Fullstack Developer</h1>
           <p class="section__description">
-            I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and
-            online stores.
+            I help businesses grow by creating modern, stylish and efficient applications, landing pages and online stores that helps them
+            to assert a digital identity.
           </p>
           <p class="hero__signature">Adrian Sajjan</p>
         </div>
@@ -30,8 +54,8 @@
           <p class="section__heading">About Me</p>
           <h1 class="section__title">Biography</h1>
           <p class="section__description">
-            I'm a Freelancer Fullstack Developer with over 3 years of experience. I'm from Kolkata, India. I code and create web and mobile
-            for amazing people around the world.
+            I'm a Freelance Fullstack Developer with over 3 years of experience. I'm from Kolkata, India. I code and create web and mobile
+            applications for amazing people around the world.
           </p>
           <div class="about__details-holder">
             <div class="about__details-column">
@@ -172,29 +196,99 @@
           <div class="portfolio__carousel-track__outer carousel-track">
             <div id="portfolio-track" class="portfolio__carousel-track">
               <div class="portfolio__carousel-item">
-                <img draggable="false" src="https://picsum.photos/370/280" alt="carousel" class="portfolio__carousel-image" />
-                <p class="portfolio__carousel-subtitle">Web App</p>
-                <h3 class="portfolio__carousel-title">Stories!</h3>
+                <img draggable="false" src="images/stories.png" alt="carousel" class="portfolio__carousel-image" />
+                <div class="portfolio__carousel-tag">
+                  <span>Web App</span>
+                  <span>React JS</span>
+                  <span>Express JS</span>
+                </div>
+                <div class="portfolio__carousel-content">
+                  <h3 class="portfolio__carousel-title">Stories!</h3>
+                  <div class="portfolio__carousel-actions">
+                    <a href="https://www.google.com" class="portfolio__carousel-icon">
+                      <i class="fa-solid fa-arrow-up-right-from-square fa-lg"></i>
+                    </a>
+                    <a href="https://www.github.com" class="portfolio__carousel-icon">
+                      <i class="fa-brands fa-github fa-lg"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
               <div class="portfolio__carousel-item">
-                <img draggable="false" src="https://picsum.photos/371/280" alt="carousel" class="portfolio__carousel-image" />
-                <p class="portfolio__carousel-subtitle">Landing Page</p>
-                <h3 class="portfolio__carousel-title">Shortly</h3>
+                <img draggable="false" src="images/shortly.png" alt="carousel" class="portfolio__carousel-image" />
+                <div class="portfolio__carousel-tag">
+                  <span>Landing Page</span>
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                </div>
+                <div class="portfolio__carousel-content">
+                  <h3 class="portfolio__carousel-title">Shortly</h3>
+                  <div class="portfolio__carousel-actions">
+                    <a href="https://www.google.com" class="portfolio__carousel-icon">
+                      <i class="fa-solid fa-arrow-up-right-from-square fa-lg"></i>
+                    </a>
+                    <a href="https://www.github.com" class="portfolio__carousel-icon">
+                      <i class="fa-brands fa-github fa-lg"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
               <div class="portfolio__carousel-item">
-                <img draggable="false" src="https://picsum.photos/370/281" alt="carousel" class="portfolio__carousel-image" />
-                <p class="portfolio__carousel-subtitle">Mobile App</p>
-                <h3 class="portfolio__carousel-title">Montra</h3>
+                <img draggable="false" src="images/insure.png" alt="carousel" class="portfolio__carousel-image" />
+                <div class="portfolio__carousel-tag">
+                  <span>Landing Page</span>
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                </div>
+                <div class="portfolio__carousel-content">
+                  <h3 class="portfolio__carousel-title">Insure</h3>
+                  <div class="portfolio__carousel-actions">
+                    <a href="https://www.google.com" class="portfolio__carousel-icon">
+                      <i class="fa-solid fa-arrow-up-right-from-square fa-lg"></i>
+                    </a>
+                    <a href="https://www.github.com" class="portfolio__carousel-icon">
+                      <i class="fa-brands fa-github fa-lg"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
               <div class="portfolio__carousel-item">
-                <img draggable="false" src="https://picsum.photos/369/280" alt="carousel" class="portfolio__carousel-image" />
-                <p class="portfolio__carousel-subtitle">Landing Page</p>
-                <h3 class="portfolio__carousel-title">MyTeam</h3>
+                <img draggable="false" src="images/myteam.png" alt="carousel" class="portfolio__carousel-image" />
+                <div class="portfolio__carousel-tag">
+                  <span>Landing Page</span>
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                </div>
+                <div class="portfolio__carousel-content">
+                  <h3 class="portfolio__carousel-title">My Team</h3>
+                  <div class="portfolio__carousel-actions">
+                    <a href="https://www.google.com" class="portfolio__carousel-icon">
+                      <i class="fa-solid fa-arrow-up-right-from-square fa-lg"></i>
+                    </a>
+                    <a href="https://www.github.com" class="portfolio__carousel-icon">
+                      <i class="fa-brands fa-github fa-lg"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
               <div class="portfolio__carousel-item">
-                <img draggable="false" src="https://picsum.photos/370/279" alt="carousel" class="portfolio__carousel-image" />
-                <p class="portfolio__carousel-subtitle">Mobile App</p>
-                <h3 class="portfolio__carousel-title">CECV</h3>
+                <img draggable="false" src="images/cecv.png" alt="carousel" class="portfolio__carousel-image" />
+                <div class="portfolio__carousel-tag">
+                  <span>Cross Platform</span>
+                  <span>Express JS</span>
+                  <span>React Native</span>
+                </div>
+                <div class="portfolio__carousel-content">
+                  <h3 class="portfolio__carousel-title">CECV</h3>
+                  <div class="portfolio__carousel-actions">
+                    <a href="https://www.google.com" class="portfolio__carousel-icon">
+                      <i class="fa-solid fa-arrow-up-right-from-square fa-lg"></i>
+                    </a>
+                    <a href="https://www.github.com" class="portfolio__carousel-icon">
+                      <i class="fa-brands fa-github fa-lg"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -250,12 +344,6 @@
           </div>
         </div>
       </section>
-      <!-- <section class="customers">
-        <div class="container">
-          <p class="section__heading">Customers</p>
-          <h1 class="section__title">Happy People</h1>
-        </div>
-      </section> -->
       <section class="contact">
         <div class="container">
           <p class="section__heading">Contact</p>
@@ -297,6 +385,13 @@
         </div>
       </section>
       <section class="footer">
+        <div class="footer__border">
+          <span class="footer__border-large"></span>
+          <a class="footer__border-arrow__wrapper" href="#">
+            <span class="footer__border-arrow"></span>
+          </a>
+          <span class="footer__border-small"></span>
+        </div>
         <div class="footer__content">
           <div class="container">
             <p>
@@ -308,29 +403,8 @@
         </div>
       </section>
     </main>
-    <aside class="sidebar">
-      <a class="sidebar__menu">
-        <span class="sidebar__menu-text">Menu</span>
-        <span class="sidebar__menu-lines"></span>
-      </a>
-      <div class="sidebar__image-wrapper">
-        <div class="sidebar__image-border__tall"></div>
-        <div class="sidebar__image-border__wide"></div>
-        <img src="images/profile-1.webp" alt="Adrian Sajjan" class="sidebar__image" />
-        <div class="sidebar__title-holder">
-          <h5 class="sidebar__title">Hi There! I Am</h5>
-          <h3 class="sidebar__animated-title">
-            <span id="typewriter" class="typewriter"></span>
-          </h3>
-        </div>
-      </div>
-      <div class="sidebar__contact-holder">
-        <span class="sidebar__contact-circle"></span>
-        <a href="#contact" class="sidebar__contact">
-          <span class="sidebar__contact-content">I'm available for a freelance job. Hire me</span>
-        </a>
-      </div>
-    </aside>
+
+    <aside></aside>
     <script src="scripts/cursor.js"></script>
     <script src="scripts/typewriter.js"></script>
     <script src="scripts/scroll.js"></script>
