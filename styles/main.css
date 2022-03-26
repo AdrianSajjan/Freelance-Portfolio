@@ -796,7 +796,7 @@ textarea.input {
 /* Contact */
 
 .contact {
-  margin: 150px 0 200px;
+  margin: 150px 0 150px;
 }
 
 .contact__info {
@@ -1140,13 +1140,82 @@ textarea.input {
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 676px) {
+  .cursor {
+    display: none;
+  }
+
+  .point {
+    display: none;
+  }
+
   .sidebar {
-    padding: 120px 20px;
+    padding: 120px 10px;
   }
 
   .scroll .sidebar {
-    padding: 120px 20px;
+    padding: 120px 10px;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  .section__title {
+    font-size: 36px;
+  }
+
+  .section__description {
+    font-size: 20px;
+  }
+
+  .about__tab-column__card-title {
+    font-size: 24px;
+  }
+
+  .about__details-holder {
+    flex-direction: column;
+  }
+
+  .about__details-property {
+    min-width: 120px;
+    flex: 0.6;
+  }
+
+  .about__details-value {
+    flex: 1.4;
+  }
+
+  .about__tab-column__card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  .portfolio__title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .portfolio__carousel-controls {
+    align-self: flex-end;
+    margin-right: 20px;
+  }
+
+  .services__card {
+    flex-direction: column;
+  }
+
+  .services__card-right {
+    border-left: 0;
+    padding: 15px 40px;
+    align-items: flex-start;
+    border-top: 1px solid #ffffff11;
+  }
+
+  .contact__info-value {
+    font-size: 24px;
   }
 }
 
