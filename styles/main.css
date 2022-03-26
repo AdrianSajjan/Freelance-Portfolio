@@ -1157,6 +1157,13 @@ textarea.input {
     padding: 120px 10px;
   }
 
+  .sidebar__menu {
+    top: 20px;
+    right: 25px;
+    z-index: 100;
+    position: fixed;
+  }
+
   .container {
     padding: 0 10px;
   }
