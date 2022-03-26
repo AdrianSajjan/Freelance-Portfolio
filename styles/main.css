@@ -713,7 +713,7 @@ textarea.input {
 /* Services */
 
 .services {
-  margin: 150px 0 40px;
+  margin: 100px 0 40px;
 }
 
 .services__cards {
@@ -1201,6 +1201,10 @@ textarea.input {
   .portfolio__carousel-controls {
     align-self: flex-end;
     margin-right: 20px;
+  }
+
+  .portfolio__carousel {
+    padding-left: 10px;
   }
 
   .services__card {
